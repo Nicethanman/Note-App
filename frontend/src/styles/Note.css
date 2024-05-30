@@ -1,25 +1,45 @@
 .note-container {
     padding: 10px;
     margin: 20px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
+    width: 550px;    /* Sets a fixed width */
+    overflow: hidden;      /* Ensures the content doesn't overflow the box */
+    word-wrap: break-word;
+    position: relative;
+    background-color:rgb(97, 97, 97) ;
+    color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
   }
   
+  .album-cover{
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+  .review-rating {
+    position:absolute;
+    top: 0;
+    right: 5px;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: 0 0 3px #000000, 0 0 3px #000000;
+  }
+
   .note-title {
-    color: #333;
+    color: #ffffff;
   }
   
   .note-content {
-    color: #666;
+    color: #ffffff;
   }
   
   .note-date {
-    color: #999;
+    color: #c2c2c2;
     font-size: 0.8rem;
   }
   
   .delete-button {
-    background-color: #f44336; /* Red */
+    background-color: #970505; /* Red */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -29,5 +49,19 @@
   }
   
   .delete-button:hover {
-    background-color: #d32f2f; /* Darker red */
+    background-color: #4d0000; /* Darker red */
+  }
+
+  .edit-button{
+    background-color: #40c004; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .edit-button:hover {
+    background-color: #0d4d00; /* Darker red */
   }

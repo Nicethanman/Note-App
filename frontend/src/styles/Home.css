@@ -1,9 +1,72 @@
 /* Container for the whole page */
 div {
-    font-family: Arial, sans-serif;
+    font-family: Trebuchet, sans-serif;
+  }
+
+  body{
+    background-color: #282928;
   }
   
+  .big-grid {
+    display:grid;
+  }
+
+  .header-grid-item{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: #313438;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logout{
+    background-color: #777777; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 15px 30px; 
+  }
+
+  .delete-button:hover {
+    background-color: #4d0000; /* Darker red */
+  }
+
+  .review-grid-item{
+    grid-row: 2;
+    grid-column: 1;
+    color:white;
+  }
+
+  .form-grid-item{
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .review-title{
+    margin: 20px 0 -40px;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+
   /* Styles for the notes section */
+
+  .notes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 40px;
+  }
+
   .notes-section {
     margin-bottom: 2rem;
   }
@@ -20,19 +83,121 @@ div {
     margin: 10px 0;
     padding: 10px 15px;
     border-radius: 5px;
+    
   }
   
   /* Styles for the form section */
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: auto;
+
+  .grid-container {
+    display: grid;
+    /* background-color: #fff; */
   }
+
+  .left-grid{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+  }
+
+  form textarea {
+    width: 100%;
+    height: 50%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #313438;
+    color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-bar{
+    grid-row: 1;
+    grid-column: 1;
+    width: 50%;
+    padding: 8px;
+    margin: 15px 0 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #313438;
+    color:#ffffff;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .submit-search{
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+  .submit-search:hover{
+    background-color: lightblue;
+  }
+
+  .no-results{
+    color:white;
+  }
+
+  .right-grid{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 40px;
+  }
+
+    /* Styles for search results */
+  .results-container{
+    grid-column:1;
+    grid-row: 2;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+  }
+
+.submit-button{
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover{
+    background-color: lightblue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
   
-  form h2 {
+  /* form h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
@@ -65,4 +230,4 @@ div {
   
   form input[type="submit"]:hover {
     background-color: #0056b3;
-  }
+  } */
