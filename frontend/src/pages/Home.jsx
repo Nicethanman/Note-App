@@ -7,9 +7,7 @@ import "../styles/Home.css"
 import {Buffer} from 'buffer'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
-
-const CLIENT_ID = "6e52df7431d74d318924decfeec05f45"
-const CLIENT_SECRET = "0b67888482964f218614a1199e43ca9d"
+import {CLIENT_ID, CLIENT_SECRET} from "../spotifyKeys"
 
 class Song {
     constructor(id, name, albumCover, artist, year) {
