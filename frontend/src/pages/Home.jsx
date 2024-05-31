@@ -152,7 +152,7 @@ function Home() {
     
         <div class="big-grid">
             <div class="header-grid-item">
-                <h1>TUNE CRITIQUE</h1>
+                <h1>Tune Critic</h1>
                 <button className="logout" onClick={logout}>Logout</button>
             </div>
             <div class="review-grid-item">

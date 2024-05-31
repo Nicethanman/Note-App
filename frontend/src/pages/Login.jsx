@@ -4,8 +4,7 @@ import "../styles/Login.css"
 function Login() {
     return <div>
 
-        <h1 className="title">Tune Critique</h1>
-        <img src="../imgs/cat.png" alt="not working"></img>
+        <h1 className="title">Tune Critic</h1>
         <Form route="/api/token/" method="login"></Form>
     </div>
 }
