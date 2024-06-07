@@ -3,6 +3,7 @@
 I decided to take on a project that would teach me the basics of full stack development. This music review web application uses a django database utilizing postgresql for the backend and react for the front end.
 The app lets a user register and login to an account where they can then create a personalized list of songs with their own ratings and opinion.
 
+
 ### Things I learned
 
 - The workflow and cohesion between frontend and backend development
