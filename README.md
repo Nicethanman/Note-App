@@ -3,7 +3,7 @@
 I decided to take on a project that would teach me the basics of full stack development. This music review web application uses a django database utilizing postgresql for the backend and react for the front end.
 The app lets a user register and login to an account where they can then create a personalized list of songs with their own ratings and opinion.
 
-<img src="https://github.com/Your_Repository_Name/Your_GIF_Name.gif" width="600" height="400">
+<img src="[https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/Nicethanman/Tune-Critic/blob/main/frontend/src/imgs/Quick%20%2B%20React%20-%20Google%20Chrome%202024-05-31%2016-49-57.gif)" width="600" height="400">
 
 ### Things I learned
 
